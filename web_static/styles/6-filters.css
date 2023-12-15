@@ -1,0 +1,89 @@
+/* section tag */
+.filters {
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.filters button {
+    font-size: 18px;
+    background-color: #FF5A5F;
+    color: #FFFFFF;
+    height: 48px;
+    width: 20%;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 30px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    opacity: 90%;
+}
+
+.locations {
+    border-right: 1px solid #DDDDDD;
+}
+.locations,
+.amenities {
+    height: 100%;
+    width: 25%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative; /* so i can postion the popover */
+}
+
+.locations h3,
+.amenities h3 {
+    font-weight: 600;
+    margin: 0px 50px;
+}
+
+.locations h4,
+.amenities h4 {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0px 50px;
+}
+
+.popover {
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 25px 50px;
+    position: absolute;
+    top: 100%;
+    left: 0%; 
+    right: 0%; 
+    display: none;
+}
+
+
+.locations:hover .popover,
+.amenities:hover .popover {
+    display: block;
+}
+.popover ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.popover h2{
+    font-size: 16px;
+    margin: 0px 0px 0px -25px;
+}
+
+.locations .popover > li:first-child{
+    margin-bottom: 30px;
+}
