@@ -40,6 +40,7 @@
     flex-direction: column;
     justify-content: center;
     position: relative; /* so i can postion the popover */
+    z-index: 5;
 }
 
 .locations h3,
